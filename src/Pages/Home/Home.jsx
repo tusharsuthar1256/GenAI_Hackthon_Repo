@@ -1,6 +1,5 @@
 import React from "react";
 import "../../global.css";
-import heroBannerImg from "../../assets/images/hero-banner.png";
 import heroImg from "../../assets/images/headerimg.png";
 import FeatureImg from "../../assets/images/FeatureImg.gif";
 
