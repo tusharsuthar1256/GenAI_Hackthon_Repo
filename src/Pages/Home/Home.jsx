@@ -2,6 +2,7 @@ import React from "react";
 import "../../global.css";
 import heroImg from "../../assets/images/headerimg.png";
 import FeatureImg from "../../assets/images/FeatureImg.gif";
+import undrawImg from "../../assets/images/undraw_career-progress_vfq5.svg"
 
 function Home() {
   return (
@@ -44,7 +45,7 @@ function Home() {
                       alt="Checkmark icon"
                     />
 
-                    <span class="span">AI-Powered Job Search</span>
+                    <span class="span">Suggest local job trends</span>
                   </li>
 
                   <li class="hero-item">
@@ -105,6 +106,7 @@ function Home() {
                 <li>
                   <div class="service-card">
                     <figure class="card-banner">
+                 
                       <img
                         src="https://codewithsadee.github.io/techx/assets/images/service-1.gif"
                         width="728"
@@ -148,7 +150,7 @@ function Home() {
                     <div class="card-content">
                       <h3 class="h3">
                         <a href="#" class="card-title">
-                          Job & Internship Matching
+                        Suggest location-based job trends.
                         </a>
                       </h3>
 
@@ -179,7 +181,8 @@ function Home() {
                     <div class="card-content">
                       <h3 class="h3">
                         <a href="#" class="card-title">
-                          AI-Based Skill Development
+                        Suggest career
+                        paths or Roadmaps
                         </a>
                       </h3>
 
@@ -237,7 +240,7 @@ function Home() {
                     />
 
                     <h3 class="item-title">
-                      Interest-Based Job & Course Recommendations
+                      Suggest best career opportunities 
                     </h3>
                   </li>
 
@@ -291,7 +294,7 @@ function Home() {
               <h2 class="h2 section-title">Empowering Students with AI</h2>
 
               <p class="section-text">
-                Our AI-driven platform helps students navigate their career
+                Our AI-driven assistance helps students navigate their career
                 journey with confidence.
               </p>
 
@@ -334,7 +337,7 @@ function Home() {
                     <div class="card-content">
                       <h3 class="h3">
                         <a href="#" class="card-title">
-                          Smart Job Finder
+                          Local Job matching
                         </a>
                       </h3>
                       <p class="card-text">
@@ -358,7 +361,7 @@ function Home() {
                     <div class="card-content">
                       <h3 class="h3">
                         <a href="#" class="card-title">
-                          AI Learning & Courses
+                          AI Learning & Courses suggestion
                         </a>
                       </h3>
                       <p class="card-text">
@@ -382,7 +385,7 @@ function Home() {
                     <div class="card-content">
                       <h3 class="h3">
                         <a href="#" class="card-title">
-                          Career Roadmap
+                        Personalized study plans
                         </a>
                       </h3>
                       <p class="card-text">
@@ -409,7 +412,7 @@ function Home() {
             <div class="container">
               <figure class="stats-banner">
                 <img
-                  src="https://codewithsadee.github.io/techx/assets/images/stats-banner.png"
+                  src={heroImg}
                   width="619"
                   height="482"
                   loading="lazy"
@@ -420,7 +423,7 @@ function Home() {
 
               <ul class="stats-list">
                 <li class="stats-item purple">
-                  <h3 class="item-title">500+</h3>
+                  <h3 class="item-title">13+</h3>
                   <p class="stats-text">Students Engaged with Our AI</p>
                 </li>
 
@@ -430,7 +433,7 @@ function Home() {
                 </li>
 
                 <li class="stats-item green">
-                  <h3 class="item-title">98%</h3>
+                  <h3 class="item-title">70%</h3>
                   <p class="stats-text">Positive Feedback from Students</p>
                 </li>
 
@@ -454,7 +457,7 @@ function Home() {
                 </p>
               </div>
 
-              <a class="btn btn-primary" href="http://localhost:5173/form">
+              <a target="_blank" class="btn btn-primary" href="https://chatgpt.com/g/g-67a59637f6c08191b59ec5db19537c6b-career-counselling-mentor">
                 Try It Now – It's Free!
               </a>
             </div>

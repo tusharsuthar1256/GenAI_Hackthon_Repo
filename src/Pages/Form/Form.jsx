@@ -3,8 +3,10 @@ import { database } from "../../utils/firebase.js";
 import { ref, push, set } from "firebase/database"; 
 import "./Form.css";
 import "../../global.css";
+import { Link } from 'react-router-dom';
 
 function Form() {
+    const [success,setSuccess] = useState(false)
     const [formData, setFormData] = useState({
         name: "",
         age: "",
@@ -34,7 +36,7 @@ function Form() {
         set(newFormEntry, formData)
         .then(() => {
             alert("🎉 Success! Your details have been submitted. 🚀 \n\nYour journey towards a brighter future starts now. Our AI is here to guide you every step of the way! 🎯");
-            
+            setSuccess(true)
             setFormData({ // Clear form after submission
                 name: "",
                 age: "",
@@ -57,7 +59,10 @@ function Form() {
 
     return (
         <>
-            <div className="form-container">
+        {success ?<div  className='form-btn-success'>
+            <a target='_blank' href='https://chatgpt.com/g/g-67a59637f6c08191b59ec5db19537c6b-career-counselling-mentor'>
+        <button>Start Conversation</button></a>
+            </div> :  <div className="form-container">
                 <h2>Registration Form</h2>
                 <form onSubmit={handleSubmit}>
                     <fieldset>
@@ -133,7 +138,8 @@ function Form() {
 
                     <button type="submit" className="btn btn-primary form-btn">Submit</button>
                 </form>
-            </div>
+            </div>}
+           
         </>
     );
 }

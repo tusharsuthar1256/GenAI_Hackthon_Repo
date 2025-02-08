@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "../../global.css"
 import { IoClose, IoMenu } from "react-icons/io5";
+import {Link} from "react-router-dom"
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,8 +43,9 @@ function Nav() {
 
         </ul>
       </nav>
-
+<Link to="/form">
       <button class="btn btn-secondary getStrated">Start Your Journey</button>
+</Link>
       <button style={{width:'auto'}} className="btn-secondary nav-toggle-btn " onClick={toggleMenu}>
             {isOpen ? <IoClose /> : <IoMenu />}
           </button>
